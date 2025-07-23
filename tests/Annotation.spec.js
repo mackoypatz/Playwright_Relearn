@@ -49,7 +49,7 @@ test('fail', async ({ page }) => {
 });
 
 //Annotation only
-test.only('testonly', async ({ page }) => {
+test('testonly', async ({ page }) => {
     await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
     await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
     await page.locator('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click();
